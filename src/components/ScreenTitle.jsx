@@ -6,19 +6,21 @@ import {ColorScheme} from '../Constants';
 export default function ScreenTitle({title}) {
   const [titleChars, setTitleChars] = useState([...title.split('')]);
 
-  useEffect(() => {
-    console.log(titleChars);
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <View
       style={{
         display: 'flex',
         flexDirection: 'row',
+        alignSelf: 'center',
         alignItems: 'center',
         justifyContent: 'center',
         height: 100,
-        width: '100%',
+        width: '30%',
+        backgroundColor: 'rgba(255,255,255,0.8)',
+        borderRadius: 30,
+        marginTop: 20,
       }}>
       {titleChars.map((letter, i) => (
         <Text
