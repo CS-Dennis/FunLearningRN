@@ -13,7 +13,12 @@ export default function Home({navigation}) {
         style={{height: '100%'}}>
         <ScreenTitle title={'Select Grade'} />
         <ScrollView horizontal>
-          <View style={{justifyContent: 'center'}}>
+          <View
+            style={{
+              justifyContent: 'center',
+              marginTop: '-20%',
+              marginBottom: '20%',
+            }}>
             <GradeCard
               navigation={navigation}
               imageSource={require('../asset/imgs/kindergarten.jpg')}

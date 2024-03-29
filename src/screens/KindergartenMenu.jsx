@@ -5,7 +5,7 @@ import {Text} from 'react-native-paper';
 export default function KindergartenMenu() {
   return (
     <>
-      <View>
+      <View style={{height: '100%', backgroundColor: 'rgb(255,255,255)'}}>
         <Text>Demo</Text>
       </View>
     </>
