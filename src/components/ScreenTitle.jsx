@@ -16,17 +16,16 @@ export default function ScreenTitle({title}) {
         alignSelf: 'center',
         alignItems: 'center',
         justifyContent: 'center',
-        height: 100,
-        width: '30%',
+        height: '100%',
+        paddingHorizontal: 50,
         backgroundColor: 'rgba(255,255,255,0.8)',
         borderRadius: 30,
-        marginTop: 20,
       }}>
       {titleChars.map((letter, i) => (
         <Text
           key={i}
           style={{
-            fontSize: 50,
+            fontSize: 40,
             fontWeight: 'bold',
             color:
               i < ColorScheme.length

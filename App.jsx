@@ -10,12 +10,14 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 import Home from './src/screens/Home';
 import KindergartenNav from './src/screens/KindergartenNav';
+import {StatusBar} from 'react-native';
 
 const Stack = createNativeStackNavigator();
 
 function App() {
   return (
     <>
+      <StatusBar backgroundColor={'rgba(255,56,145,1)'} />
       <NavigationContainer>
         <Stack.Navigator
           initialRouteName="Home"
